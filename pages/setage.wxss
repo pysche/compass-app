@@ -1,0 +1,38 @@
+.age-intro {
+
+}
+
+.age-intro .age-text {
+    display: block;
+    text-align: center;
+    margin-bottom: 24rpx;
+}
+
+.age-intro .h2 {
+    font-size: 48rpx;
+}
+
+.age-intro .h4 {
+    font-size: 32rpx;
+}
+
+.age-form {
+
+}
+
+.age-form .age-form-age {
+    display: block;
+    text-align: center;
+    width: 130px;
+    height: 102px;
+    margin: 15px auto 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 50px;
+    padding: 0 15px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjEzM3B4IiBoZWlnaHQ9IjEwNXB4IiB2aWV3Qm94PSIwIDAgMTMzIDEwNSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy44LjMgKDI5ODAyKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0QwRDBEMCIgc3RvcC1vcGFjaXR5PSIwLjQ3MzUwNTQzNSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRkZGRkZGIiBvZmZzZXQ9IjYwLjY1NzA1MTMlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNCREJEQkQiIHN0b3Atb3BhY2l0eT0iMC41NzE4NDEwMzMiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMiIgeD0iMCIgeT0iMCIgd2lkdGg9IjEzMyIgaGVpZ2h0PSIxMDUiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0zIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjEzMyIgaGVpZ2h0PSIxMDUiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0yIj48L3VzZT4KICAgICAgICA8L21hc2s+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iOSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMC41NDM2NjgzNzciPgogICAgICAgIDxnIGlkPSIxLjEuMS1BZ2UtZ2F0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY1LjAwMDAwMCwgLTI3Ny4wMDAwMDApIiBzdHJva2U9InVybCgjbGluZWFyR3JhZGllbnQtMSkiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0iIzAwMDAwMCI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NS4wMDAwMDAsIDI3Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZS02MyIgbWFzaz0idXJsKCNtYXNrLTMpIiB4bGluazpocmVmPSIjcGF0aC0yIj48L3VzZT4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+) no-repeat；
+    background-size: cover;
+    font-family: Helvetica Neue LT W01_55 Roman;
+    animation: fadeIn .75s .2s ease both;
+}

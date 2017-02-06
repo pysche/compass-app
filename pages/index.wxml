@@ -1,1 +1,7 @@
-<text>OK</text>
+<view class="container">
+    <image src="../assets/images/logofull.png" background-size="cover" mode="widthFix" class="logo"></image>
+    <text class="intro">精准</text>
+    <image src="../assets/images/youtube_thumbnail.png" background-size="cover" mode="aspectFit"></image>
+
+    <navigator class="start btn btn-block" bindtap="eventStart" url="upload">Start</navigator>
+</view>

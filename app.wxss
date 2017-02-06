@@ -1,9 +1,47 @@
+page {
+    height: 100%;
+}
+
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #000;
+    padding: 100rpx 0;
+    color: #fff;
+}
+
+.btn {
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 1.42857;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.headbar {
+    background: #000;
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 48rpx;
+    line-height: 96rpx;
+}
+
+.headline {
+    padding: 55px 30px 17px;
+    color: #fff;
+    text-align: center;
+    min-height: 100rpx;
+}
+
+.headline.isintro {
+    padding-top: 15rpx;
+}

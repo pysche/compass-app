@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="age-intro">
+        <text class="age-text h2">通过分享年龄的秘密改善结果</text>
+        <text class="age-text h4">这一步对于定制您的私人肌肤护理方案很有帮助</text>
+    </view>
+
+    <view class="age-form">
+        <view class="age-form-row">
+            <input placeholder="Age" value="" id="age" name="age" class="age-form-age" type="number"></input>
+        </view>
+        <view class="age-form-row">
+            <button>Continue</button>
+        </view>
+    </view>
+</view>

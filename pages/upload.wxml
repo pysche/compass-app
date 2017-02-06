@@ -1,0 +1,23 @@
+<view class="container upload">
+    <view class="headbar">
+        <text class="h1">为得到更准确的肌肤分析</text>
+    </view>
+
+    <view class="list">
+        <ol>
+            <li class="list0">
+                <span>请将头发梳到脑后，如果可以的话，请卸下您的妆容，摘掉您的眼镜。</span>
+            </li>
+
+            <li class="list1">
+                <span>请使用前置摄像头来减少阴影。</span>
+            </li>
+
+            <li class="list2">
+                <span>确保您的整个面部处于画面的中心，表情自然。</span>
+            </li>
+        </ol>
+
+        <button class="upload" bindtap="eventTakeAPhoto">Take a photo</button>
+    </view>
+</view>

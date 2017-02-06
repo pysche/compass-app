@@ -1,0 +1,53 @@
+.container.upload {
+    background: url(../assets/images/background.jpg) repeat-y 50%;
+    background-size: 100% auto;
+    padding: 0rpx;
+    margin: -2rpx;
+    display: block;
+}
+
+.list {
+    display: block;
+    margin: 0rpx;
+    padding: 0rpx;
+}
+
+.list ol {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.list ol li {
+    padding: 64rpx;
+    border-bottom: 1px solid #eee;
+    color: #000;
+    display: block;
+    min-height: 96rpx;
+}
+
+.list ol li.list2 {
+    border: 0px;
+}
+
+.list ol li.list0:before {
+    content: "1";
+    font-size: 128rpx;
+    color: darkyellow;
+}
+
+.list ol li.list1:before {
+    content: "2";
+    font-size: 128rpx;
+    color: darkyellow;
+}
+
+.list ol li.list2:before {
+    content: "3";
+    font-size: 128rpx;
+    color: darkyellow;
+}
+
+button.upload {
+    width: 50%;
+}

@@ -1,0 +1,27 @@
+.start {
+    border: 0 solid transparent;
+    border-radius: 0;
+    padding: 15rpx 10rpx;
+    font-size: 32rpx;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    background: #868686;
+    background-image: -webkit-linear-gradient(left bottom,#868686 0,#e5e5e5 25%,#eaeaea 26%,#bfbfbf 0,#fff 46%,#fff 55%,#bcbcbc 79%,#bababa);
+}
+
+.logo {
+    width: 65%;
+    height: auto;
+    max-height: 400rpx;
+}
+
+.intro {
+    color: #d9d9d9;
+    font-family: "NeutrafaceText-Light,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,Heiti SC";
+    font-size: 42rpx;
+    line-height: 42rpx;
+    margin: 32rpx 0 0;
+}

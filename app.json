@@ -1,11 +1,15 @@
 {
   "pages":[
-    "pages/index"
+    "pages/index",
+    "pages/setage",
+    "pages/upload",
+    "pages/report",
+    "pages/confirm"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "Olay Compass",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"#fff"
   }
 }

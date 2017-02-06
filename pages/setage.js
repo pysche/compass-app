@@ -5,13 +5,13 @@ Page({
     data: {},
     bindViewTap: function () {},
     onLoad: function () {
-        console.log('Page index loaded');
+        console.log('Page setage loaded');
 
         app.getUserInfo(() => {
 
         });
     },
     eventStart: function () {
-        
+
     }
 });

@@ -10,6 +10,8 @@ App({
         userInfo: null
     },
     onLaunch: function () {
+        console.log('App Launched');
+        
         this.getUserInfo();
     },
     getUserInfo: function (callback) {
@@ -23,6 +25,7 @@ App({
                     wx.getUserInfo({
                         success: function (res) {
                             $this.data.userInfo = res.userInfo;
+                            console.log($this.data);
                             typeof callback === 'function' && callback();
                         }
                     });
