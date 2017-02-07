@@ -9,7 +9,9 @@ App({
     data: {
         userInfo: null,
         openid: '',
-        sessionKey: ''
+        sessionKey: '',
+        photo: '',
+        device: {}
     },
     config: {
         api: 'https://wxazuretest.shenghuojia.com/',
@@ -17,9 +19,16 @@ App({
         module: 'kkk'
     },
     onLaunch: function () {
+        let $this = this;
         console.log('App Launched');
 
-        this.getUserInfo();
+        try {
+            wx.getSystemInfo({
+                success: function (res) {
+                    $this.data.device = res;
+                }
+            });
+        } catch (e) {}
     },
     getUserInfo: function (callback) {
         let $this = this;
@@ -50,7 +59,8 @@ App({
                             wx.getUserInfo({
                                 success: function (res) {
                                     $this.data.userInfo = res.userInfo;
-
+                                    console.log('got userinfo '+JSON.stringify(res.userInfo));
+                                    
                                     typeof callback === 'function' && callback();
                                 }
                             });

@@ -18,18 +18,31 @@ Page({
             sourceType: ['camera'],
             success: function (res) {
                 let file = res.tempFilePaths[0];
+                app.data.photo = file;
 
-                wx.getImageInfo({
-                    src: file,
-                    success: function (res) {
-                        wx.previewImage({
-                            urls: [ file ],
-                            success: function (res) {
-                                console.log(res)
-                            }
-                        });
-                    }
+                wx.showToast({
+                    title: 'Uploading ...',
+                    icon: 'loading',
+                    duration: 10000,
+                    mask: true
                 });
+
+                setTimeout(() => {
+                    wx.navigateTo({
+                        url: 'report'
+                    });
+                }, 5000);
+
+                /*
+                wx.uploadFile({
+                    url: app.config.api+'index.php?m=Api&c=App&a=uploadimage',
+                    filePath: file,
+                    name: 'photo',
+                    formData: {},
+                    success: function (res) {
+
+                    }
+                });*/
                 console.log(file)
             }
         });

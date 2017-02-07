@@ -1,0 +1,63 @@
+<view class="container report">
+    <view class="report-head">
+        <view class="age-presenter">
+            <text class="text age-text">您的肌肤年龄</text>
+            <text class="text age-yourage">{{skinAge}}</text>
+        </view>
+
+        <text class="text text-view intro">智能肌肤顾问已经分析了您的五个衰老区域，总结了您肌肤护理中的首要任务。</text>
+        <text class="text text-view view">点击下方不同区域了解更多信息</text>
+    </view>
+
+    <view class="report-list">
+        <view class="report-item">
+            <view class="report-item-fill" style="width: {{foreheadWidth}}%;"></view>
+            <view class="report-item-label1">
+                + 前额
+            </view>
+            <view class="report-item-label2">
+                最佳区域
+            </view>
+        </view>
+
+        <view class="report-item">
+            <view class="report-item-fill" style="width: {{crowsfeetWidth}}%;"></view>
+            <view class="report-item-label1">
+                + 眼角
+            </view>
+            <view class="report-item-label2">
+
+            </view>
+        </view>
+
+        <view class="report-item">
+            <view class="report-item-fill" style="width: {{undereyeWidth}}%;"></view>
+            <view class="report-item-label1">
+                + 眼袋部位
+            </view>
+            <view class="report-item-label2">
+
+            </view>
+        </view>
+
+        <view class="report-item">
+            <view class="report-item-fill" style="width: {{cheekWidth}}%;"></view>
+            <view class="report-item-label1">
+                + 脸颊
+            </view>
+            <view class="report-item-label2">
+
+            </view>
+        </view>
+
+        <view class="report-item">
+            <view class="report-item-fill" style="width: {{mouthWidth}}%;"></view>
+            <view class="report-item-label1">
+                + 嘴部
+            </view>
+            <view class="report-item-label2">
+
+            </view>
+        </view>
+    </view>
+</view>
