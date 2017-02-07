@@ -1,5 +1,6 @@
 'use strict';
 
+let lib = require('../library/library.js');
 let app = getApp();
 Page({
     data: {},
@@ -12,6 +13,6 @@ Page({
         });
     },
     eventStart: function () {
-        
+
     }
 });

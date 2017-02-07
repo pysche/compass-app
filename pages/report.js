@@ -1,5 +1,6 @@
 'use strict';
 
+let lib = require('../library/library.js');
 let app = getApp();
 Page({
     data: {},
@@ -7,7 +8,7 @@ Page({
     onLoad: function () {
         let $this = this;
 
-        console.log('Page report loaded');
+        lib.log('Page report loaded');
 
         wx.showToast({
             title: 'Fetching report ...',
@@ -18,7 +19,7 @@ Page({
 
         app.getUserInfo(() => {
             let requestUri = app.config.api+'index.php?m=Api&c=App&a=getreport';
-            console.log('fetch response from '+requestUri);
+            lib.log('fetch response from '+requestUri);
 
             wx.request({
                 url: requestUri,

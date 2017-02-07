@@ -1,11 +1,12 @@
 'use strict';
 
+let lib = require('../library/library.js');
 let app = getApp();
 Page({
     data: {},
     bindViewTap: function () {},
     onLoad: function () {
-        console.log('Page upload loaded');
+        lib.log('Page upload loaded');
 
         app.getUserInfo(() => {
 
@@ -43,7 +44,7 @@ Page({
 
                     }
                 });*/
-                console.log(file)
+                lib.log(file)
             }
         });
     }

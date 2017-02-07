@@ -33,21 +33,23 @@
 .list ol li.list0:before {
     content: "1";
     font-size: 128rpx;
-    color: darkyellow;
+    color: #7f7550 !important;
 }
 
 .list ol li.list1:before {
     content: "2";
     font-size: 128rpx;
-    color: darkyellow;
+    color: #7f7550 !important;
 }
 
 .list ol li.list2:before {
     content: "3";
     font-size: 128rpx;
-    color: darkyellow;
+    color: #7f7550 !important;
 }
 
 button.upload {
-    width: 50%;
+    width: 75%;
+    border: 2rpx solid #7f7550;
+    border-radius: 0rpx;
 }

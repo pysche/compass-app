@@ -1,7 +1,7 @@
 .start {
     border: 0 solid transparent;
     border-radius: 0;
-    padding: 15rpx 10rpx;
+    padding: 30rpx 20rpx;
     font-size: 32rpx;
     color: #000;
     text-decoration: none;
@@ -24,4 +24,5 @@
     font-size: 42rpx;
     line-height: 42rpx;
     margin: 32rpx 0 0;
+    width: 80%;
 }

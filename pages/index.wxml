@@ -1,7 +1,7 @@
 <view class="container">
     <image src="../assets/images/logofull.png" background-size="cover" mode="widthFix" class="logo"></image>
-    <text class="intro">精准</text>
+    <text class="intro">RIGHT PRODUCTS. RIGHT IN THE PALM OF YOUR HAND.</text>
     <image src="../assets/images/youtube_thumbnail.png" background-size="cover" mode="aspectFit"></image>
 
-    <navigator class="start btn btn-block" bindtap="eventStart" url="upload">Start</navigator>
+    <navigator class="start btn btn-block" bindtap="eventStart" url="upload">Get Started</navigator>
 </view>

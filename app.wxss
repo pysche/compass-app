@@ -31,7 +31,7 @@ page {
     display: block;
     text-align: center;
     width: 100%;
-    font-size: 48rpx;
+    font-size: 32rpx;
     line-height: 96rpx;
 }
 
