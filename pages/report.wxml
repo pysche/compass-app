@@ -16,7 +16,7 @@
                 + Forehead
             </view>
             <view class="report-item-label2">
-                Best Area
+                <text style="display: {{foreheadDisplay}};">Best Area</text>
             </view>
         </view>
 
@@ -26,7 +26,7 @@
                 + Crow's Feet
             </view>
             <view class="report-item-label2">
-
+                <text style="display: {{crowsfeetDisplay}};">Best Area</text>
             </view>
         </view>
 
@@ -36,7 +36,7 @@
                 + Under Eye
             </view>
             <view class="report-item-label2">
-
+                <text style="display: {{undereyeDisplay}};">Best Area</text>
             </view>
         </view>
 
@@ -46,7 +46,7 @@
                 + Cheek
             </view>
             <view class="report-item-label2">
-
+                <text style="display: {{cheekDisplay}};">Best Area</text>
             </view>
         </view>
 
@@ -56,7 +56,7 @@
                 + Mouth
             </view>
             <view class="report-item-label2">
-
+                <text style="display: {{mouthDisplay}};">Best Area</text>
             </view>
         </view>
     </view>

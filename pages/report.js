@@ -35,9 +35,14 @@ Page({
                         skinAge: $data.skinAge
                     });
 
+                    let best = '', min = 1;
                     for (let i in $data.zones) {
                         let zone = $data.zones[i];
                         let width = parseInt(zone.weight*100)*4;
+
+                        if (min>zone.weight) {
+                            best = zone.zone;
+                        }
 
                         switch (zone.zone) {
                             case 'nasolabial_mouth':
@@ -67,8 +72,48 @@ Page({
                                 break;
                         }
                     }
+
+                    $this.setData({
+                        mouthDisplay: 'none',
+                        undereyeDisplay: 'none',
+                        cheekDisplay: 'none',
+                        crowsfeetDisplay: 'none',
+                        foreheadDisplay: 'none'
+                    });
+
+                    //  set `Best Area`
+                    switch (best) {
+                        case 'nasolabial_mouth':
+                            $this.setData({
+                                mouthDisplay: 'auto'
+                            });
+                            break;
+                        case 'undereye':
+                            $this.setData({
+                                undereyeDisplay: 'auto'
+                            });
+                            break;
+                        case 'cheek':
+                            $this.setData({
+                                cheekDisplay: 'auto'
+                            });
+                            break;
+                        case 'crowsfeet':
+                            $this.setData({
+                                crowsfeetDisplay: 'auto'
+                            });
+                            break;
+                        case 'forehead':
+                            $this.setData({
+                                foreheadDisplay: 'auto'
+                            });
+                            break;
+                    }
                 }
             });
         });
+    },
+    onShareAppMessage: function () {
+        return app.config.share;
     }
 });

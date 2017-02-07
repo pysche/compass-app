@@ -18,7 +18,12 @@ App({
     config: {
         api: 'https://wxazuretest.shenghuojia.com/',
         appRoot: '/pages/',
-        module: 'kkk'
+        module: 'kkk',
+        share: {
+            title: 'Olay SkinAdvisor',
+            desc: 'RIGHT PRODUCTS. RIGHT IN THE PALM OF YOUR HAND.',
+            path: '/pages/index'
+        }
     },
     onLaunch: function () {
         let $this = this;

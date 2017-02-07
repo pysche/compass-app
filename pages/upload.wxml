@@ -1,4 +1,5 @@
 <view class="container upload">
+    <image src="../assets/images/logofull.png" background-size="cover" mode="widthFix" class="logo" style="display: none;height: 900px !important;"></image>
     <view class="headbar">
         <text class="h1">FOR THE MOST ACCURATE SKIN ANALYSIS</text>
     </view>

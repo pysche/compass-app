@@ -14,5 +14,8 @@ Page({
     },
     eventStart: function () {
 
+    },
+    onShareAppMessage: function () {
+        return app.config.share;
     }
 });

@@ -38,7 +38,7 @@
     position: relative;
     width: 400rpx;
     height: 300rpx;
-    background-image: url(../assets/images/report.png);
+    background-image: url(http://compass.chinacloudsites.cn/content/dist/bda563929b80135e824ec23637be7ca3.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;

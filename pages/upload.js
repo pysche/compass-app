@@ -28,24 +28,25 @@ Page({
                     mask: true
                 });
 
-                setTimeout(() => {
-                    wx.navigateTo({
-                        url: 'report'
-                    });
-                }, 5000);
-
-                /*
                 wx.uploadFile({
                     url: app.config.api+'index.php?m=Api&c=App&a=uploadimage',
                     filePath: file,
                     name: 'photo',
                     formData: {},
                     success: function (res) {
-
+                        wx.navigateTo({
+                            url: 'report'
+                        });
+                    },
+                    fail: function (e) {
+                        lib.log(e);
                     }
-                });*/
+                });
                 lib.log(file)
             }
         });
+    },
+    onShareAppMessage: function () {
+        return app.config.share;
     }
 });
