@@ -10,53 +10,16 @@
     </view>
 
     <view class="report-list">
-        <view class="report-item">
-            <view class="report-item-fill" style="width: {{foreheadWidth}}%;"></view>
-            <view class="report-item-label1">
-                + Forehead
-            </view>
-            <view class="report-item-label2">
-                <text style="display: {{foreheadDisplay}};">Best Area</text>
-            </view>
-        </view>
 
-        <view class="report-item">
-            <view class="report-item-fill" style="width: {{crowsfeetWidth}}%;"></view>
+        <view wx:for="{{report}}" wx:key="idx" wx:for-item="item" class="report-item" bindtap="eventShowItemDetail" id="item-{{item.zone}}">
+            <view class="report-item-fill" style="width: {{item.width}}%;"></view>
             <view class="report-item-label1">
-                + Crow's Feet
+                + {{item.name}}
             </view>
             <view class="report-item-label2">
-                <text style="display: {{crowsfeetDisplay}};">Best Area</text>
-            </view>
-        </view>
-
-        <view class="report-item">
-            <view class="report-item-fill" style="width: {{undereyeWidth}}%;"></view>
-            <view class="report-item-label1">
-                + Under Eye
-            </view>
-            <view class="report-item-label2">
-                <text style="display: {{undereyeDisplay}};">Best Area</text>
-            </view>
-        </view>
-
-        <view class="report-item">
-            <view class="report-item-fill" style="width: {{cheekWidth}}%;"></view>
-            <view class="report-item-label1">
-                + Cheek
-            </view>
-            <view class="report-item-label2">
-                <text style="display: {{cheekDisplay}};">Best Area</text>
-            </view>
-        </view>
-
-        <view class="report-item">
-            <view class="report-item-fill" style="width: {{mouthWidth}}%;"></view>
-            <view class="report-item-label1">
-                + Mouth
-            </view>
-            <view class="report-item-label2">
-                <text style="display: {{mouthDisplay}};">Best Area</text>
+                <block wx:if="{{item.best}}">
+                    <text>Best Area</text>
+                </block>
             </view>
         </view>
     </view>

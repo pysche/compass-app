@@ -3,7 +3,9 @@
 let lib = require('../library/library.js');
 let app = getApp();
 Page({
-    data: {},
+    data: {
+    },
+    report: {},
     bindViewTap: function () {},
     onLoad: function () {
         let $this = this;
@@ -24,7 +26,7 @@ Page({
             wx.request({
                 url: requestUri,
                 data: {
-
+                    app_openid: app.data.openid
                 },
                 success: function (res) {
                     wx.hideToast();
@@ -38,82 +40,51 @@ Page({
                     let best = '', min = 1;
                     for (let i in $data.zones) {
                         let zone = $data.zones[i];
+                        let id = zone.zone;
                         let width = parseInt(zone.weight*100)*4;
 
                         if (min>zone.weight) {
-                            best = zone.zone;
+                            best = id;
                         }
+
+                        $this.report[id] = zone;
+                        $this.report[id].width = width;
+                        $this.report[id].best = false;
 
                         switch (zone.zone) {
                             case 'nasolabial_mouth':
-                                $this.setData({
-                                    mouthWidth: width
-                                });
+                                $this.report[zone.zone].name = 'Mouth';
                                 break;
                             case 'undereye':
-                                $this.setData({
-                                    undereyeWidth: width
-                                });
+                                $this.report[zone.zone].name = 'Under Eye';
                                 break;
                             case 'cheek':
-                                $this.setData({
-                                    cheekWidth: width
-                                });
+                                $this.report[zone.zone].name = 'Cheek';
                                 break;
                             case 'crowsfeet':
-                                $this.setData({
-                                    crowsfeetWidth: width
-                                });
+                                $this.report[zone.zone].name = 'Crow\'s Feet';
                                 break;
                             case 'forehead':
-                                $this.setData({
-                                    foreheadWidth: width
-                                });
-                                break;
+                                $this.report[zone.zone].name = 'Forehead';
                         }
                     }
 
-                    $this.setData({
-                        mouthDisplay: 'none',
-                        undereyeDisplay: 'none',
-                        cheekDisplay: 'none',
-                        crowsfeetDisplay: 'none',
-                        foreheadDisplay: 'none'
-                    });
+                    $this.report[best].best = true;
 
-                    //  set `Best Area`
-                    switch (best) {
-                        case 'nasolabial_mouth':
-                            $this.setData({
-                                mouthDisplay: 'auto'
-                            });
-                            break;
-                        case 'undereye':
-                            $this.setData({
-                                undereyeDisplay: 'auto'
-                            });
-                            break;
-                        case 'cheek':
-                            $this.setData({
-                                cheekDisplay: 'auto'
-                            });
-                            break;
-                        case 'crowsfeet':
-                            $this.setData({
-                                crowsfeetDisplay: 'auto'
-                            });
-                            break;
-                        case 'forehead':
-                            $this.setData({
-                                foreheadDisplay: 'auto'
-                            });
-                            break;
-                    }
+                    $this.setData({
+                        report: $this.report
+                    });
                 }
             });
         });
     },
     onShareAppMessage: function () {
         return app.config.share;
+    },
+    eventShowItemDetail: function (event) {
+        let $this = this;
+        let itemId = event.currentTarget.id.replace('item-', '');
+        let reportItem = $this.report[itemId];
+        console.log(reportItem);
     }
 });

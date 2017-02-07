@@ -32,7 +32,9 @@ Page({
                     url: app.config.api+'index.php?m=Api&c=App&a=uploadimage',
                     filePath: file,
                     name: 'photo',
-                    formData: {},
+                    formData: {
+                        app_openid: app.data.openid
+                    },
                     success: function (res) {
                         wx.navigateTo({
                             url: 'report'
