@@ -66,6 +66,7 @@ Page({
                                 break;
                             case 'forehead':
                                 $this.report[zone.zone].name = 'Forehead';
+                                break;
                         }
                     }
 
