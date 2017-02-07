@@ -1,15 +1,13 @@
 {
   "pages":[
     "pages/index",
-    "pages/setage",
     "pages/upload",
-    "pages/report",
-    "pages/confirm"
+    "pages/report"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "Olay Compass",
+    "navigationBarTitleText": "Olay SkinAdvisor",
     "navigationBarTextStyle":"#fff"
   }
 }
