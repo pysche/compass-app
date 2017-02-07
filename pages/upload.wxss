@@ -19,7 +19,7 @@
 }
 
 .list ol li {
-    padding: 64rpx;
+    padding: 48rpx;
     border-bottom: 1px solid #eee;
     color: #000;
     display: block;
