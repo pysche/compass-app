@@ -16,7 +16,7 @@ Page({
         wx.chooseImage({
             count: 1,
             sizeType: ['original'],
-            sourceType: ['camera'],
+            sourceType: ['camera', 'album'],
             success: function (res) {
                 let file = res.tempFilePaths[0];
                 app.data.photo = file;
