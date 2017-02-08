@@ -5,7 +5,13 @@ let app = getApp();
 Page({
     data: {
     },
-    report: {},
+    report: {
+        forehead: {},
+        crowsfeet: {},
+        undereye: {},
+        cheek: {},
+        nasolabial_mouth: {}
+    },
     bindViewTap: function () {},
     onLoad: function () {
         let $this = this;
@@ -37,40 +43,49 @@ Page({
                         skinAge: $data.skinAge
                     });
 
-                    let best = '', min = 1;
+                    let best = '', worst, min = 1, max = 0;
                     for (let i in $data.zones) {
-                        let zone = $data.zones[i];
+                        let zone = $data.zones[i].valueOf();
                         let id = zone.zone;
                         let width = parseInt(zone.weight*100)*4;
 
                         if (min>zone.weight) {
                             best = id;
+                            min = zone.weight;
                         }
 
-                        $this.report[id] = zone;
-                        $this.report[id].width = width;
-                        $this.report[id].best = false;
+                        if (max<zone.weight) {
+                            worst = id;
+                            max = zone.weight;
+                        }
+
+                        zone.width = width;
+                        zone.best = false;
+                        zone.worst = false;
 
                         switch (zone.zone) {
                             case 'nasolabial_mouth':
-                                $this.report[zone.zone].name = 'Mouth';
+                                zone.name = 'Mouth';
                                 break;
                             case 'undereye':
-                                $this.report[zone.zone].name = 'Under Eye';
+                                zone.name = 'Under Eye';
                                 break;
                             case 'cheek':
-                                $this.report[zone.zone].name = 'Cheek';
+                                zone.name = 'Cheek';
                                 break;
                             case 'crowsfeet':
-                                $this.report[zone.zone].name = 'Crow\'s Feet';
+                                zone.name = 'Crow\'s Feet';
                                 break;
                             case 'forehead':
-                                $this.report[zone.zone].name = 'Forehead';
+                                zone.name = 'Forehead';
                                 break;
                         }
+
+                        $this.report[id] = zone;
                     }
 
                     $this.report[best].best = true;
+                    $this.report[worst].worst = true;
 
                     $this.setData({
                         report: $this.report

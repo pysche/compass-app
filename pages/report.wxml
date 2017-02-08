@@ -20,6 +20,9 @@
                 <block wx:if="{{item.best}}">
                     <text>Best Area</text>
                 </block>
+                <block wx:if="{{item.worst}}">
+                    <text>Improvement Area</text>
+                </block>
             </view>
         </view>
     </view>
